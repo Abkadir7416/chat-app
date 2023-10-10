@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(190, 148, 232);
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    border: 2px solid;
+    width: 50%;
+    margin: auto;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.message {
+    background-color: rgb(151, 151, 151);
+    max-width: 70%;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+.center {
+    text-align: center;
+    clear: both;
+    width: 54%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#send-container {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 10px;
+}
+
+#messageInp {
+    width: 85%;
+    border: 2px solid;
+    border-radius: 6px;
+    height: 34px;
+    font-size: 20px;
+    outline: none;
+}
+
+.btn {
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 6px;
+    height: 38px;
+    width: 12%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.chat {
+    background-color: rgb(141, 75, 207);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 850px) {
+    .container {
+        width: 80%;
+    }
+
+    #send-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+
+    h1 {
+        font-size: 20px;
+        font-weight: 999;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    #send-container {
+        width: 100%;
+    }
+
+    #messageInp {
+        width: 70%;
+        font-size: 16px;
+        height: 25px;
+        margin-top: -8px;
+    }
+
+    .btn {
+        width: 22%;
+        padding: 0;
+        font-size: 16px;
+        height: 30px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+}
